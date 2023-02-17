@@ -1,18 +1,67 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sablon</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bérlés</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
     <div class="container">
-        <h1>Sablon</h1>
+      <h1 class="mb-4">Bérlés</h1>
+
+      <div>
+        <h5>Eladó</h5>
+        <div class="mt-3">
+          <input class="form-control" type="text" placeholder="eladó neve" />
+        </div>
+        <div class="mt-3">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="vendor"
+            id="owner"
+          />
+          <label for="owner">Tulajdonos</label>
+        </div>
+        <div class="mt-1">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="vendor"
+            id="renter"
+          />
+          <label for="renter">Bérlő</label>
+        </div>
+
+        <h5 class="mt-3">Vevő</h5>
+        <div class="mt-3">
+          <input class="form-control" type="text" placeholder="eladó neve" />
+        </div>
+        <div class="mt-3">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="customer"
+            id="cusRenter"
+          />
+          <label for="cusRenter">Bérlő</label>
+        </div>
+        <div class="mt-1">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="customer"
+            id="subCusRenter"
+          />
+          <label for="subCusRenter">Albérlő</label>
+        </div>
+      </div>
     </div>
 
     <script src="js/bootstrap.js"></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
